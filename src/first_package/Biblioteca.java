@@ -1,4 +1,5 @@
 package first_package;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Biblioteca {
@@ -6,6 +7,16 @@ public class Biblioteca {
 
     public Biblioteca(){
         storage = new ArrayList<Carte>();
+    }
+
+    public Biblioteca(ArrayList<Carte> list)
+    {
+        storage = new ArrayList<Carte>();
+        for(Carte c: list)
+        {
+            storage.add(c);
+        }
+
     }
 
     @Override

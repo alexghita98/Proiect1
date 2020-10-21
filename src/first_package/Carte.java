@@ -4,14 +4,14 @@ public class Carte implements Comparable<Carte>{
     private String titlu;
     private String autor;
     private int an_aparitie;
-    private int nr_pag;
+    private int numar_pagini;
 
     public Carte(String t, String a, int an, int npag)
     {
         this.titlu = t;
         this.autor = a;
         this.an_aparitie = an;
-        this.nr_pag = npag;
+        this.numar_pagini = npag;
     }
 
     @Override
@@ -21,11 +21,11 @@ public class Carte implements Comparable<Carte>{
 
     @Override
     public int compareTo(Carte o) {
-        if(this.nr_pag > o.nr_pag)
+        if(this.numar_pagini > o.numar_pagini)
         {
             return 1;
         }
-        else if(this.nr_pag < o.nr_pag)
+        else if(this.numar_pagini < o.numar_pagini)
         {
             return -1;
         }
