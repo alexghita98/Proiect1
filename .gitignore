@@ -1,0 +1,4 @@
+*.out
+
+#Nu ma intereseaza arhivele
+*.zip
